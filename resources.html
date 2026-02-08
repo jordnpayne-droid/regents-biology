@@ -8,30 +8,34 @@
 <body>
 
 <nav>
-  <h1>Regents Biology</h1>
+  <div class="nav-top">
+    <h1>Regents Biology</h1>
 
-  <div class="lang-toggle">
-    <button onclick="setLanguage('en')">English</button>
-    <button onclick="setLanguage('es')">Español</button>
+    <div class="controls">
+      <div class="lang-toggle">
+        <button onclick="setLanguage('en')">EN</button>
+        <button onclick="setLanguage('es')">ES</button>
+      </div>
+
+      <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    </div>
   </div>
-
-  <ul class="unit-nav">
-    <li><a href="units.html#u1" data-en="Units" data-es="Unidades"></a></li>
-    <li><a href="index.html" data-en="Home" data-es="Inicio"></a></li>
-  </ul>
 </nav>
 
 <main>
-  <h2 data-en="Class Resources" data-es="Recursos de la Clase"></h2>
+  <section>
+    <h2 data-en="Resources" data-es="Recursos"></h2>
 
-  <ul>
-    <li data-en="Slides and Notes" data-es="Presentaciones y Apuntes"></li>
-    <li data-en="Labs and Investigations" data-es="Laboratorios e Investigaciones"></li>
-    <li data-en="Regents Practice Questions" data-es="Preguntas de Práctica Regents"></li>
-    <li data-en="Vocabulary Review" data-es="Repaso de Vocabulario"></li>
-  </ul>
+    <ul class="resource-list">
+      <li>📊 <span data-en="Slides & Notes" data-es="Presentaciones y Apuntes"></span></li>
+      <li>🧪 <span data-en="Labs & Investigations" data-es="Laboratorios e Investigaciones"></span></li>
+      <li>📝 <span data-en="Regents Practice" data-es="Práctica Regents"></span></li>
+      <li>📘 <span data-en="Vocabulary Review" data-es="Repaso de Vocabulario"></span></li>
+    </ul>
+  </section>
 </main>
 
 <script src="language.js"></script>
+<script src="theme.js"></script>
 </body>
 </html>
