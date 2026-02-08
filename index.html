@@ -8,45 +8,58 @@
 <body>
 
 <nav>
-  <h1>Regents Biology</h1>
+  <div class="nav-top">
+    <h1>Regents Biology</h1>
 
-  <div class="lang-toggle">
-    <button onclick="setLanguage('en')">English</button>
-    <button onclick="setLanguage('es')">Español</button>
+    <div class="controls">
+      <div class="lang-toggle">
+        <button onclick="setLanguage('en')">EN</button>
+        <button onclick="setLanguage('es')">ES</button>
+      </div>
+
+      <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    </div>
   </div>
 
   <ul class="unit-nav">
-    <li><a href="units.html#u1" data-en="Marathon Runner" data-es="Corredor de Maratón"></a></li>
-    <li><a href="units.html#u2" data-en="Humans vs. Bacteria" data-es="Humanos vs. Bacterias"></a></li>
-    <li><a href="units.html#u3" data-en="Evolution of Sick Humans" data-es="Evolución de Humanos Enfermos"></a></li>
-    <li><a href="units.html#u4" data-en="Saving the Mountain Lion" data-es="Salvando al León de Montaña"></a></li>
-    <li><a href="units.html#u5" data-en="Food for All" data-es="Alimentos para Todos"></a></li>
-    <li><a href="units.html#u6" data-en="Woolly Mammoth" data-es="Mamut Lanudo"></a></li>
+    <li><a href="units.html#u1" data-unit="1" data-en="Marathon Runner" data-es="Corredor de Maratón"></a></li>
+    <li><a href="units.html#u2" data-unit="2" data-en="Humans vs. Bacteria" data-es="Humanos vs. Bacterias"></a></li>
+    <li><a href="units.html#u3" data-unit="3" data-en="Evolution of Sick Humans" data-es="Evolución de Humanos Enfermos"></a></li>
+    <li><a href="units.html#u4" data-unit="4" data-en="Saving the Mountain Lion" data-es="Salvando al León de Montaña"></a></li>
+    <li><a href="units.html#u5" data-unit="5" data-en="Food for All" data-es="Alimentos para Todos"></a></li>
+    <li><a href="units.html#u6" data-unit="6" data-en="Woolly Mammoth" data-es="Mamut Lanudo"></a></li>
   </ul>
 </nav>
 
 <main>
-  <section>
-    <h2 data-en="This Week" data-es="Esta Semana"></h2>
 
-    <p data-en="Current Unit: Marathon Runner"
-       data-es="Unidad Actual: Corredor de Maratón"></p>
+  <!-- TODAY BOX -->
+  <section class="today">
+    <h2 data-en="Today" data-es="Hoy"></h2>
 
-    <p data-en="Essential Question: How do humans maintain internal balance?"
-       data-es="Pregunta Esencial: ¿Cómo mantienen el equilibrio interno los humanos?"></p>
+    <p data-en="Unit: Marathon Runner"
+       data-es="Unidad: Corredor de Maratón"></p>
 
-    <p data-en="We are exploring feedback mechanisms and homeostasis."
-       data-es="Estamos explorando los mecanismos de retroalimentación y la homeostasis."></p>
+    <p data-en="Focus: Negative feedback and homeostasis"
+       data-es="Enfoque: Retroalimentación negativa y homeostasis"></p>
+
+    <!-- Optional embed later -->
+    <!-- Paste Google Slides iframe here -->
   </section>
 
   <section>
     <h2 data-en="Why This Matters" data-es="Por Qué Esto Importa"></h2>
 
-    <p data-en="These ideas explain health, disease, and appear on the Regents exam."
-       data-es="Estas ideas explican la salud, las enfermedades y aparecen en el examen Regents."></p>
+    <p data-en="Understanding homeostasis explains health, disease, and survival."
+       data-es="Comprender la homeostasis explica la salud, las enfermedades y la supervivencia."></p>
   </section>
+
 </main>
 
 <script src="language.js"></script>
+<script src="theme.js"></script>
+<script>
+  setCurrentUnit(1); // ← CHANGE THIS NUMBER AS YOU MOVE THROUGH UNITS
+</script>
 </body>
 </html>
