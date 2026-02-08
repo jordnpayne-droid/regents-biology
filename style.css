@@ -9,26 +9,29 @@ nav {
   background: #fff;
   border-bottom: 1px solid #ddd;
   padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
-nav ul {
+nav h1 {
+  margin: 0 0 0.5rem 0;
+}
+
+.unit-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
   list-style: none;
-  display: flex;
-  gap: 1.2rem;
-  margin: 0;
   padding: 0;
+  margin: 0.5rem 0;
 }
 
-nav a {
+.unit-nav a {
   text-decoration: none;
   color: #333;
+  font-size: 0.9rem;
 }
 
 .lang-toggle button {
-  margin-left: 0.4rem;
+  margin-right: 0.4rem;
   padding: 0.3rem 0.6rem;
   cursor: pointer;
 }
