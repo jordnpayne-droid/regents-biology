@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Regents Biology</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h1>Regents Biology</h1>
+
+  <div class="lang-toggle">
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('es')">Español</button>
+  </div>
+
+  <ul>
+    <li><a href="index.html" data-en="Home" data-es="Inicio"></a></li>
+    <li><a href="units.html" data-en="Units" data-es="Unidades"></a></li>
+    <li><a href="resources.html" data-en="Resources" data-es="Recursos"></a></li>
+  </ul>
+</nav>
+
+<main>
+  <section>
+    <h2 data-en="This Week" data-es="Esta Semana"></h2>
+
+    <p data-en="Unit: Homeostasis & Feedback"
+       data-es="Unidad: Homeostasis y Retroalimentación"></p>
+
+    <p data-en="Essential Question: How do living systems maintain balance?"
+       data-es="Pregunta Esencial: ¿Cómo mantienen el equilibrio los sistemas vivos?"></p>
+
+    <p data-en="This week we are exploring how the body maintains internal stability."
+       data-es="Esta semana exploramos cómo el cuerpo mantiene la estabilidad interna."></p>
+  </section>
+
+  <section>
+    <h2 data-en="Why This Matters" data-es="Por Qué Esto Importa"></h2>
+
+    <p data-en="These ideas explain health, disease, and appear on the Regents exam."
+       data-es="Estas ideas explican la salud, las enfermedades y aparecen en el examen Regents."></p>
+  </section>
+</main>
+
+<script src="language.js"></script>
+</body>
+</html>
