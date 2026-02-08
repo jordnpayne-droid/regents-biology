@@ -8,69 +8,43 @@
 <body>
 
 <nav>
-  <h1>Regents Biology</h1>
+  <div class="nav-top">
+    <h1>Regents Biology</h1>
 
-  <div class="lang-toggle">
-    <button onclick="setLanguage('en')">English</button>
-    <button onclick="setLanguage('es')">Español</button>
+    <div class="controls">
+      <div class="lang-toggle">
+        <button onclick="setLanguage('en')">EN</button>
+        <button onclick="setLanguage('es')">ES</button>
+      </div>
+
+      <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    </div>
   </div>
 
   <ul class="unit-nav">
-    <li><a href="#u1" data-en="Marathon Runner" data-es="Corredor de Maratón"></a></li>
-    <li><a href="#u2" data-en="Humans vs. Bacteria" data-es="Humanos vs. Bacterias"></a></li>
-    <li><a href="#u3" data-en="Evolution of Sick Humans" data-es="Evolución de Humanos Enfermos"></a></li>
-    <li><a href="#u4" data-en="Saving the Mountain Lion" data-es="Salvando al León de Montaña"></a></li>
-    <li><a href="#u5" data-en="Food for All" data-es="Alimentos para Todos"></a></li>
-    <li><a href="#u6" data-en="Woolly Mammoth" data-es="Mamut Lanudo"></a></li>
+    <li><a href="#u1" data-unit="1" data-en="Marathon Runner" data-es="Corredor de Maratón"></a></li>
+    <li><a href="#u2" data-unit="2" data-en="Humans vs. Bacteria" data-es="Humanos vs. Bacterias"></a></li>
+    <li><a href="#u3" data-unit="3" data-en="Evolution of Sick Humans" data-es="Evolución de Humanos Enfermos"></a></li>
+    <li><a href="#u4" data-unit="4" data-en="Saving the Mountain Lion" data-es="Salvando al León de Montaña"></a></li>
+    <li><a href="#u5" data-unit="5" data-en="Food for All" data-es="Alimentos para Todos"></a></li>
+    <li><a href="#u6" data-unit="6" data-en="Woolly Mammoth" data-es="Mamut Lanudo"></a></li>
   </ul>
 </nav>
 
 <main>
-  <h2 data-en="Units of Study" data-es="Unidades de Estudio"></h2>
-
-  <section id="u1">
-    <h3 data-en="Unit 1: Marathon Runner"
-        data-es="Unidad 1: Corredor de Maratón"></h3>
-    <p data-en="Homeostasis and feedback mechanisms in humans."
-       data-es="Homeostasis y mecanismos de retroalimentación en humanos."></p>
-  </section>
-
-  <section id="u2">
-    <h3 data-en="Unit 2: Humans vs. Bacteria"
-        data-es="Unidad 2: Humanos vs. Bacterias"></h3>
-    <p data-en="Natural selection and interdependence of organisms."
-       data-es="Selección natural e interdependencia de los organismos."></p>
-  </section>
-
-  <section id="u3">
-    <h3 data-en="Unit 3: Evolution of Sick Humans"
-        data-es="Unidad 3: Evolución de Humanos Enfermos"></h3>
-    <p data-en="Genetics, protein synthesis, and the mismatch hypothesis."
-       data-es="Genética, síntesis de proteínas y la hipótesis de desajuste."></p>
-  </section>
-
-  <section id="u4">
-    <h3 data-en="Unit 4: Saving the Mountain Lion"
-        data-es="Unidad 4: Salvando al León de Montaña"></h3>
-    <p data-en="Reproduction and genetic variation."
-       data-es="Reproducción y variación genética."></p>
-  </section>
-
-  <section id="u5">
-    <h3 data-en="Unit 5: Food for All"
-        data-es="Unidad 5: Alimentos para Todos"></h3>
-    <p data-en="Energy and matter in ecosystems."
-       data-es="Energía y materia en los ecosistemas."></p>
-  </section>
-
-  <section id="u6">
-    <h3 data-en="Unit 6: Woolly Mammoth"
-        data-es="Unidad 6: Mamut Lanudo"></h3>
-    <p data-en="Ecosystem resilience, climate change, and human impact."
-       data-es="Resiliencia de los ecosistemas, cambio climático e impacto humano."></p>
-  </section>
+  <section id="u1"><h3>Unit 1: Marathon Runner</h3></section>
+  <section id="u2"><h3>Unit 2: Humans vs. Bacteria</h3></section>
+  <section id="u3"><h3>Unit 3: Evolution of Sick Humans</h3></section>
+  <section id="u4"><h3>Unit 4: Saving the Mountain Lion</h3></section>
+  <section id="u5"><h3>Unit 5: Food for All</h3></section>
+  <section id="u6"><h3>Unit 6: Woolly Mammoth</h3></section>
 </main>
 
 <script src="language.js"></script>
+<script src="theme.js"></script>
+<script>
+  setCurrentUnit(1);
+</script>
 </body>
 </html>
+
