@@ -1,18 +1,21 @@
 function toggleTheme() {
   document.body.classList.toggle("dark");
-  localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
-}
 
-function loadTheme() {
-  if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark");
-  }
+  localStorage.setItem(
+    "theme",
+    document.body.classList.contains("dark") ? "dark" : "light"
+  );
 }
 
 function setCurrentUnit(num) {
   document.querySelectorAll("[data-unit]").forEach(link => {
-    if (link.dataset.unit == num) link.classList.add("active");
+    link.classList.toggle("active", link.dataset.unit == num);
   });
 }
 
-loadTheme();
+// ✅ Wait until page loads
+document.addEventListener("DOMContentLoaded", () => {
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+  }
+});
